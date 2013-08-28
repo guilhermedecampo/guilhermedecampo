@@ -1,0 +1,9 @@
+{
+ "name":"guilhermedecampo",
+  "version":"0.0.1",
+  "dependencies":{
+      "express":"",
+      "ejs":"",
+      "jade":""
+  }
+}
