@@ -12,7 +12,6 @@ app.configure(function () {
     app.engine('jade', require('jade').__express);
 });
 
-var server = http.createServer(app);
 
 app.get('/', function (req, res){
   res.render('index.jade')
@@ -45,4 +44,4 @@ app.use(function (req, res, next){
 
 });
 
-server.listen(1500);
+app.listen(1500);

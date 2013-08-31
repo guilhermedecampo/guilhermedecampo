@@ -22,7 +22,6 @@ html.no-js(lang='en')
     script(src='http://use.edgefonts.net/kaushan-script.js')
     link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
     script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js')
-    script(type='text/javascript')(src='http://guilhermedecampo.tumblr.com/api/read/json')
 
   body
     header
@@ -56,13 +55,13 @@ html.no-js(lang='en')
               p &#9889;
               h3 Ideas
       // end of project list section
-      .container(role='container')
+      .container
         // Dynamic content
         block content
     // end of profile section
     footer
       section#end
-        .container(role='container')
+        .container
           ul
             li
               a(href='http://www.twitter.com/gdecampo', title='twitter') &#62218;
@@ -74,7 +73,7 @@ html.no-js(lang='en')
               a(href='http://www.linkedin.com/pub/guilherme-decampo/14/911/78', title='linkedin') &#62233;
             br
             li
-              a#email(href='mailto:contact@guilhermedecampo.com') contact@guilhermedecampo.com
+              a#email(href='mailto:contact@guilhermedecampo.com', title='email') contact@guilhermedecampo.com
     // JavaScript at the bottom for fast page loading
     // Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
