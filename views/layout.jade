@@ -86,6 +86,40 @@ html.no-js(lang='en')
             br
             li
               a#email(href='mailto:contact@guilhermedecampo.com', title='email') contact@guilhermedecampo.com
+            br
+            br
+          ul
+            li
+              div.g-plusone(data-href="http://www.guilhermedecampo.com/")
+            li
+              div(class="fb-like", data-href="http://www.guilhermedecampo.com/", data-width="450", data-layout="button_count", data-show-faces="true", data-send="true")
+            li
+              a(href="https://twitter.com/gdecampo", class="twitter-follow-button", data-show-count="false") Follow @gdecampo
+
+    script(type='text/javascript').
+      !function(d,s,id)
+      {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){js=d.createElement(s);
+      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+    div#fb-root
+    script(type='text/javascript').
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    script(type='text/javascript').
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
     // JavaScript at the bottom for fast page loading
     script(type='text/javascript').
       // The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
