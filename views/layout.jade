@@ -22,6 +22,18 @@ html.no-js(lang='en')
     script(src='http://use.edgefonts.net/kaushan-script.js')
     link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
     script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js')
+    <!-- ClickTale Top part -->
+    script(type='text/javascript').
+      var WRInitTime=(new Date()).getTime();
+    script(type='text/javascript').
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43665867-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
   body
     header
@@ -74,10 +86,55 @@ html.no-js(lang='en')
             br
             li
               a#email(href='mailto:contact@guilhermedecampo.com', title='email') contact@guilhermedecampo.com
+            br
+            br
+          ul
+            li
+              div.g-plusone(data-href="http://www.guilhermedecampo.com/")
+            li
+              div(class="fb-like", data-href="http://www.guilhermedecampo.com/", data-width="450", data-layout="button_count", data-show-faces="true", data-send="true")
+            li
+              a(href="https://twitter.com/gdecampo", class="twitter-follow-button", data-show-count="false") Follow @gdecampo
+
+    script(type='text/javascript').
+      !function(d,s,id)
+      {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){js=d.createElement(s);
+      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+    div#fb-root
+    script(type='text/javascript').
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    script(type='text/javascript').
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
     // JavaScript at the bottom for fast page loading
+    script(type='text/javascript').
+      // The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+      //
+      //   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+      //
+      // For details about ClickTale hooks, please consult the wiki page http://wiki.clicktale.com/Article/Customizing_code_version_2
+      document.write(unescape("%3Cscript%20src='"+
+      (document.location.protocol=='https:'?
+      "https://clicktalecdn.sslcs.cdngc.net/www07/ptc/c10ca520-2733-4b34-9e63-59b16d054305.js":
+      "http://cdn.clicktale.net/www07/ptc/c10ca520-2733-4b34-9e63-59b16d054305.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+
     // Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-    script.
+    script(type='text/javascript').
       // When the Document Object Model is ready
       jQuery(document).ready(function(){
       // 'catTopPosition' is the amount of pixels #cat
@@ -91,7 +148,7 @@ html.no-js(lang='en')
             return false;
           });
       });
-    script.
+    script(type='text/javascript').
       var path = window.location.href; // Just grabbing a handy reference to it
       $('section div.container.clearfix a').each(function() {
         if (this.href === path) {
