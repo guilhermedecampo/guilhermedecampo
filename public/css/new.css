@@ -137,14 +137,10 @@ footer .container	 	{ max-width:1200px; }
   margin: 0;
   position: relative;
   vertical-align: top;
-  width:100%;
-  font-size:1.3em;
-  width:33%;
+  width:25%;
+  margin-bottom: 10px;
 }
 
-#project-list h3, #project-list p{
-  color:white;
-}
 
 .navButton > div {
   border-radius: 50%;
@@ -163,10 +159,6 @@ footer .container	 	{ max-width:1200px; }
   height: 130px;
   text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
   box-shadow: inset 0px 0px 11px -1px black;
-  background: #477edb;
-}
-
-div.active {
   background: #477edb;
 }
 
@@ -266,3 +258,36 @@ footer li:last-child 	{ margin:0; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+
+
+.polaroid {
+  position: relative;
+  width: 220px;
+}
+
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px 3px #777;
+}
+
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  color: #000;
+  font-size: 15px;
+}
+
+.polar {
+  width:100%;
+}
+
+
+
+
+
