@@ -2,53 +2,31 @@ extends layout
 
 block content
 	article.brief-about
-		p
-			| The most important thing that I learned building, working and studying is that the customers give the rules. Its our job to search what they want
-			| and create the best experience ever.
-		p
-			| Nowadays is all about:
-		ul
-			li Find the best tools
-			li Create the best analysis
-			li Optimize time and afford with Pareto law
-			li Pivot
-		p
-			| Besides the
-			a(href='/works#profile') marketing skills
-			| I also have a passion for building online things. To pursue this passion I've been studying how to code with javascript, HTML and CSS.
-			| During my journey I made some startups and this website(nodejs + express + jade + forever + http-proxy + VPS).
-		p
-			| I also enjoy investments and gym exercises.
-		p
-			| This summer (2013-USA) I got accepted in a program called Startup Dream Team in San Francisco, CA. It was an awesome experience. Eighteen people from all over the world studying startups, joining meetups, developing elevator pitches and meeting VCs.
-		p
-			b My Tags:
-			| Startups, online marketing, growth hacking, solving problems, business models, coding, investments, bodybuilding.
-		h4
-			| Currently I'm working at my startup that allows you to order and buy drinks through your smartphone
-			a(href='http://www.drinkzy.com') Drinkzy.
-			br
-			| If you have doubts about marketing, customer development or distribution send me an
-			a(href='mailto:contact@guilhermedecampo.com') email
-			| I'll be glad to help you in your journey.
-	.bottom
-		img.avatar(src='/avatar.jpg')
-		aside
+		div.left
+			img.avatar(src='/avatar1.jpg')
+		div.right
+			p.center
+				| Hi my name is Guilherme Decampo and I develop online based companies.
 			p
-			b BA in Business Administration
-			br
-			a(href='http://www.ufla.br') Universidade Federal de Lavras
-			br
-			| 2012
-			br
-			b Startup marketer
-			br
-			| 2012 - Present
-			br
-			| Living in the awesome
-			br
-			|San Francisco CA
-
-
-
-			'www.guilhermedecampo.com' : '192.241.224.223:1500',
+				| The most important thing that I learned building, working and studying is that the customers give the rules. It's our job to search what they want
+				| and create the best experience ever.
+			p
+				| Until now I have a lot of failures and a few running startups. I Spent six months of 2013 in San Franciso which I had the opportunity to
+				| join a program called Startup Dream Team (Eighteen startup people from all over the world in one house), visited a lot of cool startups, joined meetups and networked with great people.
+		p.above.center
+			| Above you can see my current startups, works and failures!
+	article
+	article#project-list
+		.container.clearfix
+			a.navButton(href='/#profile')
+				div
+					p &#59170;
+					h3 Profile
+			a.navButton(href='/works#profile')
+				div
+					p &#128710;
+					h3 Works
+			a.navButton(href='/ideas#profile')
+				div
+					p &#9889;
+					h3 Ideas
