@@ -130,7 +130,7 @@ footer .container	 	{ max-width:1200px; }
 }
 
 #project-list h3:hover 	{ -moz-transition:color 0.2s linear; -webkit-transition:color 0.2s linear; }
-#project-list p          { text-align:center; line-height:60px; font-size:4.5em; color:black; margin: 0; padding-top: 15px;}
+#project-list p          { text-align:center; color:black; margin: 0; padding-top: 15px; height: 35px;}
 #project-list a {
   display: block;
   float: left;
@@ -267,11 +267,10 @@ footer li:last-child 	{ margin:0; }
 }
 
 .polaroid img {
-  border: 10px solid #fff;
   border-bottom: 45px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px 1px #777;
+     -moz-box-shadow: 3px 3px 3px 1px #777;
+          box-shadow: 3px 3px 3px 1px #777;
 }
 
 .polaroid p {
@@ -280,7 +279,8 @@ footer li:last-child 	{ margin:0; }
   width: 100%;
   bottom: 0px;
   color: #000;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: 'kaushan-script';
 }
 
 .polar {
